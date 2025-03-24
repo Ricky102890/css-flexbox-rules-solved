@@ -34,12 +34,22 @@ section {
   width: 100%;
   max-width: 964px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
 }
 
 .header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo-search {
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .logo {
@@ -54,6 +64,9 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .search-bar input {
@@ -71,9 +84,17 @@ section {
 }
 
 .options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
 
 .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
@@ -85,6 +106,8 @@ section {
 }
 
 .categories {
+  display: flex;
+  justify-content: center;
   background-color: #2b2d36;
   padding-top: 20px;
 }
@@ -111,6 +134,8 @@ section {
 }
 
 .view-options {
+  display: flex;
+  flex-direction: row;
 }
 
 i.fa-th-list {
@@ -118,6 +143,10 @@ i.fa-th-list {
 }
 
 .section-control {
+  display: flex;
+  align-items: center;
+  grid-row: 1 / all;
+  grid-column: 1 / all;
   padding-bottom: 20px;
   border-bottom: 1px solid #8d8ba5;
 }
